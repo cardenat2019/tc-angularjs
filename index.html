@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="AppExamen" ng-controller="ClientController as cli">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Examen Tonny Cardenas</title>
+
+        <!-- Incluir Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="css/animate.css">
+
+        <!-- Estilo personalizado -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="app/ng-plugins/ng-toastr/toastr.min.css">
+
+        <!-- Incluir AngularJS -->
+        <script src="app/lib/angular.min.js"></script>
+        <script src="app/lib/angular.route.js"></script>
+
+        <script src="app/app.js"></script>
+
+        <!-- Declaración de Servicios -->
+        <!-- <script src="app/services/client.service.js"></script> -->
+
+        <!-- Declaración de Controladores -->
+        <script src="app/controllers/client.controller.js"></script>
+
+        <!-- Plugins para AngularJS-->
+        <script src="app/ng-plugins/ng-sweetalert/SweetAlert.js"></script>
+        <script src="app/ng-plugins/ng-toastr/angular-toastr.js"></script>
+        <script src="app/ng-plugins/ng-toastr/angular-toastr.tpls.js"></script>
+
+    </head>
+    <body>
+
+        <div ng-include="menuSuperior"></div> 
+
+        <div class="container">
+            <p>Esta es la zona</p>
+            <div ng-view></div>
+        </div>
+
+    </body>
+</html>

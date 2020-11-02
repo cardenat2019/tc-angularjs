@@ -1,0 +1,41 @@
+<div class="row">
+    <div class="col-md-8">
+        <div class="box-header with-border">
+            <h3 class="box-title">Clientes</h3>
+            <div class="box-tools">
+                <div class="form-group">
+                <a href="" class="btn btn-primary" ><i class="fa fa-plus"></i> Agregar cliente</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <table class="table table-bordered table-responsive table-responsive-md">
+      <thead>
+        <tr>
+          <th>Código</th>
+          <th>Nombre</th>
+          <th>Correo</th>
+          <th>Sitio Web</th>
+          <th>Teléfono</th>
+          <th>Contacto</th>
+          <th>Editar</th>
+        </tr>
+      </thead>
+      <tbody ng-hide="cli.clientList===[]">
+        
+        <tr ng-repeat="cliente in cli.clientList">
+          <td>{{ cliente.code }}</td>
+          <td>{{ cliente.name }}</td>
+          <td>{{ cliente.email }}</td>
+          <td>{{ cliente.website }}</td>
+          <td>{{ cliente.phone_number }}</td>
+          <td>{{ cliente.contact }}</td>
+          <td>
+            <a href=`/client/${cliente.id}` class="btn btn-warning" ><i class="fa fa-edit"></i> Editar </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+</div>

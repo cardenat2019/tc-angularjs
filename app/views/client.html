@@ -1,0 +1,14 @@
+<div class="card text-white bg-primary">
+  <div class="card-body">
+    <form name="clientForm" class="form-horizontal" ng-submit="cli.save()" novalidate>
+        <input type="text" class="form-control" ng-model="client.code" ng-required="true">
+        <input type="text" class="form-control" ng-model="client.name" ng-required="true">
+        <input type="email" class="form-control" ng-model="client.email" ng-required="true">
+        <input type="url" class="form-control" ng-model="client.website">
+        <input type="text" class="form-control" ng-model="client.phone_number" ng-required="true">
+        <input type="text" class="form-control" ng-model="client.contact" ng-required="true">
+        <button type="submit" class="btn btn-outline-dark">Guardar</button>
+        <button type="button" class="btn btn-outline-secondary">Cancelar</button>
+    </form>
+  </div>
+</div>
